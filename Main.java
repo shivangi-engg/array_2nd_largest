@@ -41,17 +41,9 @@ public class Main
 				res = largest;
 				largest = i;
 			}
-			else if(arr[i] == arr[largest])
+			else if(arr[i] != arr[largest])
 			{
-				continue;
-			}
-			else
-			{
-				if(arr[i] <= res)
-				{
-					continue;
-				}
-				else
+				if(res == -1 || arr[i] > arr[res])
 				{
 					res = i;
 				}
